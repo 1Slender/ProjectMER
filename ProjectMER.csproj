@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <LangVersion>12</LangVersion>
+    <TargetFramework>net4.8</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseOutputPath>E:\repos\AlternateUniverse\.Release</BaseOutputPath>
+    <ErrorReport>none</ErrorReport>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" />
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\Assembly-CSharp-Publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandSystem.Core">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\CommandSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="LabApi">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\LabApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="NorthwoodLib">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\NorthwoodLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp" HintPath="$(SL_REFERENCES)\Assembly-CSharp-Publicized.dll" />
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="YamlDotNet">
+      <HintPath>E:\repos\AlternateUniverse\DLLS\YamlDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.3.6" />
+  </ItemGroup>
+
+</Project>
